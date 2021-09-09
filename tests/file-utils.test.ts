@@ -1,9 +1,9 @@
+// auto-mock fs
+jest.mock('fs');
+
 import fs from 'fs';
 import { mocked } from 'ts-jest/utils';
 import { saveJsonToFile } from '../src/file-utils';
-
-// auto-mock fs
-jest.mock('fs');
 
 describe('saveJsonToFile', () => {
   let data: any;
