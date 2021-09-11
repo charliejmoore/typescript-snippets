@@ -29,3 +29,5 @@ To run [unit tests](https://github.com/charliejmoore/typescript-snippets/tree/ma
 ### Documentation
 
 You can read documentation (generated with [TypeDoc](https://typedoc.org/)) for this project [here](https://charliejmoore.github.io/typescript-snippets/).
+
+To re-generate the documentation, run `npm run docs` in the project directory. The documentation will be located in the `docs/` directory.
