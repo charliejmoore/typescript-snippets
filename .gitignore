@@ -10,3 +10,6 @@ notes/
 !.vscode/extensions.json
 .history/*
 *.code-workspace
+
+# Unit test coverage reports
+/coverage
