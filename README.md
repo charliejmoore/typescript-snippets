@@ -14,6 +14,7 @@
 
 - [GitHub Actions workflow](https://github.com/charliejmoore/typescript-snippets/tree/main/.github/workflows) to run unit tests upon pushing to the repo.
 - [Jest](https://jestjs.io/) for unit testing.
+- [TypeDoc](https://typedoc.org/) for generating documentation.
 
 ### Installation + Requirements
 
@@ -25,3 +26,6 @@ To get this code, download/clone the repo and run `npm install` in the project r
 
 To run [unit tests](https://github.com/charliejmoore/typescript-snippets/tree/main/tests) for these snippets, run `npm test` at the project root.
 
+### Documentation
+
+You can read documentation (generated with [TypeDoc](https://typedoc.org/)) for this project [here](https://charliejmoore.github.io/typescript-snippets/).
