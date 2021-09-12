@@ -24,7 +24,7 @@ To get this code, download/clone the repo and run `npm install` in the project r
 
 ### Tests
 
-To run [unit tests](https://github.com/charliejmoore/typescript-snippets/tree/main/tests) for these snippets, run `npm test` at the project root.
+To run [unit tests](https://github.com/charliejmoore/typescript-snippets/tree/main/tests) for these snippets, run `npm test` at the project root. Test results and a coverage summary will be output to the terminal, and a gitignored `coverage/` directory will be created/updated at the root level of the project with a test coverage report.
 
 ### Documentation
 
