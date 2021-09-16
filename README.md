@@ -17,6 +17,7 @@
 - [GitHub Actions workflow](https://github.com/charliejmoore/typescript-snippets/tree/main/.github/workflows) to run unit tests upon pushing to the repo.
 - [Jest](https://jestjs.io/) for unit testing.
 - [TypeDoc](https://typedoc.org/) for generating documentation.
+- [Coveralls.io](https://coveralls.io/): A code coverage tracking tool that can [integrate with GitHub Actions](https://github.com/marketplace/actions/coveralls-github-action) to add badges ([like these](https://shields.io/)) to your `README`.
 
 ### Installation + Requirements
 
