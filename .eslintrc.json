@@ -1,0 +1,91 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "sonarjs"
+    ],
+    "rules": {
+        "eqeqeq": ["warn", "smart"],
+        "no-async-promise-executor": "warn",
+        "no-await-in-loop": "warn", // https://eslint.org/docs/rules/no-await-in-loop,
+        "no-cond-assign": "warn",
+        "no-constant-condition": "warn",
+        "no-dupe-args": "warn",
+        "no-duplicate-imports": "warn",
+        "no-dupe-else-if": "warn",
+        "no-dupe-keys": "warn",
+        "no-duplicate-case": "warn",
+        "no-empty": "warn",
+        "no-extra-boolean-cast": "off",
+        "no-import-assign": "warn",
+        "no-irregular-whitespace": "warn",
+        "no-promise-executor-return": "warn", // https://eslint.org/docs/rules/no-promise-executor-return
+        "no-unreachable": "warn",
+        "no-unsafe-finally": "warn",
+        "no-unsafe-negation": "warn",
+        //"class-methods-use-this": "warn",
+        "no-else-return": "warn",
+        "no-floating-decimal": "warn",
+        "no-lone-blocks": "warn",
+        "no-loop-func": "warn",
+        // "no-magic-numbers": "warn",
+        "no-new": "warn",
+        "no-var": "warn",
+        "quotes": ["warn", "single", {"avoidEscape": true, "allowTemplateLiterals": true}],
+        "spaced-comment": ["warn", "always", { "block": {"balanced": true}}],
+        "semi": ["warn", "always"],
+        "sonarjs/no-all-duplicated-branches": ["warn"],
+        "sonarjs/no-duplicated-branches": ["warn"],
+        "sonarjs/no-empty-collection": ["warn"],
+        "sonarjs/no-extra-arguments": ["warn"],
+        "sonarjs/no-identical-conditions": ["warn"],
+        "sonarjs/no-ignored-return": ["warn"], // Noncompliant 'hello'.lastIndexOf('e');, // Compliant let char = 'hello'.lastIndexOf('e');
+        "sonarjs/no-use-of-empty-return-value": ["warn"],
+        "sonarjs/non-existent-operator": ["warn"],
+        "sonarjs/no-collapsible-if": ["warn"],
+        "sonarjs/no-gratuitous-expressions": "warn",
+        "sonarjs/no-identical-functions": "warn",
+        "sonarjs/no-inverted-boolean-check": "warn",
+        "sonarjs/no-redundant-boolean": "warn",
+        "sonarjs/no-same-line-conditional": "warn",
+        "sonarjs/no-unused-collection": "warn",
+        "sonarjs/prefer-single-boolean-return": "warn",
+        // TypeScript
+        "@typescript-eslint/no-inferrable-types": "off", // Allow use of inferrable types
+        "no-useless-constructor": "off",
+        "@typescript-eslint/no-useless-constructor": ["warn"], // Disallow empty constructors, but don't consider constructors with params as empty
+        /* Formatting */
+        // Empty Lines
+        "lines-between-class-members": ["warn", "always", { "exceptAfterSingleLine": true}],
+        "no-multiple-empty-lines": ["warn", {"max": 1}],
+        "padded-blocks": ["warn", "never"],
+        "padding-line-between-statements": [ "warn",
+          {"blankLine": "always", "prev":"import", "next":"*"},
+          {"blankLine": "any", "prev":"import", "next":"import"},
+          {"blankLine": "never", "prev":["class"], "next":"*"}
+        ],
+        // Spacing
+        "no-multi-spaces": "warn",
+        "comma-spacing": ["warn", {"before": false, "after": true}],
+        "block-spacing": ["warn", "always"],
+        "no-trailing-spaces": ["warn"],
+        "no-whitespace-before-property": ["warn"],
+        "space-before-blocks": ["warn", "always"],
+        "space-in-parens": ["warn", "never"],
+        "space-infix-ops": "warn",
+        "space-unary-ops": "warn",
+        "@typescript-eslint/type-annotation-spacing": ["warn"]
+    }
+}
