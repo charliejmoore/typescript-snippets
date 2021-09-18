@@ -8,9 +8,11 @@ import { saveJsonToFile } from '../src/file-utils';
 describe('saveJsonToFile', () => {
   let data: any;
   const path: string = 'some/test/path'
+
   beforeEach(() => {
-    // clear any previous calls
+    // Clear any previous calls
     mocked(fs.writeFileSync).mockClear();
+
     data = {
       fruit: "Banana",
       vegetable: "Carrot"
@@ -22,6 +24,10 @@ describe('saveJsonToFile', () => {
     saveJsonToFile(data, path);
     expect(mocked(fs.writeFileSync).mock.calls.length).toBe(1);
     expect(mocked(fs.writeFileSync)).toBeCalledWith(path, json)
-  })
+  });
 
+  it('should throw an error when #fs.writeFileSync returns an error', () => {
+    mocked(fs.writeFileSync).mockImplementation(() => { throw new Error("an error") });
+    expect(() => saveJsonToFile(data, path)).toThrowError("an error");
+  });
 });

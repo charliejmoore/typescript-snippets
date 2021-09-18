@@ -9,7 +9,7 @@ export function saveJsonToFile(data: any, path: string): void {
   try {
     fs.writeFileSync(path, JSON.parse(JSON.stringify(data, null, 4)));
   } catch (err) {
-      console.error(err);
+      throw new Error(err);
   }
 }
 
