@@ -1,4 +1,5 @@
 import fs from 'fs';
+
 /**
  * Create/overwrite a new JSON file saving the inputted data at the specified path location.
  * @export
