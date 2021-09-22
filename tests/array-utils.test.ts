@@ -64,4 +64,35 @@ describe('ArrayUtils', () => {
       expect(ArrayUtils.flatten(array)).toEqual([2, 3, 4, 3, 7]);
     });
   });
+
+  describe('test #getRandomElement function', () => {
+    it('should return an element from the input array', () => {
+      const array = [1, 2, 3];
+      const actual = ArrayUtils.getRandomElement(array);
+      expect(array).toContain(actual);
+    });
+
+    it('should return the only element in an input array of length 1', () => {
+      const array = [3];
+      const actual = ArrayUtils.getRandomElement(array);
+      expect(actual).toEqual(3);
+    });
+
+    it('should return an element in an input array of even length', () => {
+      const array = [1, 2];
+      const actual = ArrayUtils.getRandomElement(array);
+      expect(array).toContain(actual);
+    });
+
+    it('should return an element in an input array of odd length', () => {
+      const array = [1, 2, 3, 4, 5];
+      const actual = ArrayUtils.getRandomElement(array);
+      expect(array).toContain(actual);
+    });
+
+    it('should return nothing when given an empty input list', () => {
+      const actual = ArrayUtils.getRandomElement([]);
+      expect(actual).toBeFalsy();
+    });
+  });
 });
