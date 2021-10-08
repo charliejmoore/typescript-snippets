@@ -4,7 +4,6 @@
 ![](https://github.com/charliejmoore/typescript-snippets/actions/workflows/build.yml/badge.svg)
 ![](https://github.com/charliejmoore/typescript-snippets/actions/workflows/linter.yml/badge.svg)
 
-
 [TypeScript Snippets](https://github.com/charliejmoore/typescript-snippets) contains a collection of assorted TypeScript helper functions. I created this repository mostly as a way to tinker around with TypeScript outside of web projects, and to have a simple playground to experiment with various tools/configurations/best practices.
 
 ### ✨ Snippet Contents
