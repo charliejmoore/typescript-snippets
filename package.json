@@ -7,16 +7,20 @@
     "test": "jest",
     "build": "tsc --build",
     "docs": "npx typedoc",
-    "lint": "eslint '**/*.ts'"
+    "lint": "eslint '**/*.ts'",
+    "postinstall": "husky install"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
     "@types/jest": "^27.0.0",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
     "eslint": "^7.32.0",
     "eslint-plugin-sonarjs": "^0.10.0",
+    "husky": "^7.0.2",
     "jest": "^27.0.6",
     "ts-jest": "^27.0.4",
     "typedoc": "^0.22.2",
