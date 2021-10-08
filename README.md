@@ -20,6 +20,8 @@
 - [Jest](https://jestjs.io/) for unit testing.
 - [TypeDoc](https://typedoc.org/) for generating documentation.
 - [Coveralls.io](https://coveralls.io/): A code coverage tracking tool that can [integrate with GitHub Actions](https://github.com/marketplace/actions/coveralls-github-action) to add badges ([like these](https://shields.io/)) to your `README`.
+- [Husky](https://typicode.github.io/husky/#/) for linting commit messages.
+- [Commitlint](https://github.com/conventional-changelog/commitlint): Checks that commit messages meet the [conventional commit format](https://www.conventionalcommits.org/en/v1.0.0/) (Husky works with Commitlint).
 
 ### 🚀 Installation + Requirements
 
